@@ -18,8 +18,8 @@ from diffusers.models import AutoencoderKL
 from diffusers import StableDiffusionPipeline
 
 model = "CompVis/stable-diffusion-v1-4"
-vae = AutoencoderKL("stabilityai/sd-vae-ft-mse")
-pipe = StableDiffusionPipeline(model, vae=vae)
+vae = AutoencoderKL.from_pretrained("stabilityai/sd-vae-ft-mse")
+pipe = StableDiffusionPipeline.from_pretrained(model, vae=vae)
 ```
 
 ## Decoder Finetuning
