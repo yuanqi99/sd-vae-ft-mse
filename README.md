@@ -3,7 +3,6 @@ license: mit
 tags:
 - stable-diffusion
 - stable-diffusion-diffusers
-- text-to-image
 inference: false
 ---
 # Improved Autoencoders
